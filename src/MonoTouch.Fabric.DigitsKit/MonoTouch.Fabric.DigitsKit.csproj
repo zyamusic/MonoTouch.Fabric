@@ -54,27 +54,47 @@
     <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MonoTouch.Fabric.TwitterCore\MonoTouch.Fabric.TwitterCore.csproj">
+      <Project>{A6455BEE-0D57-4C78-8065-FF46B32DE7B9}</Project>
+      <Name>MonoTouch.Fabric.TwitterCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonoTouch.Fabric\MonoTouch.Fabric.csproj">
+      <Project>{F2FB7104-B907-4292-8120-D821B2390A33}</Project>
+      <Name>MonoTouch.Fabric</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DigitsKitResources.bundle\DGTAssistedAuthViewController.nib" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\DGTAuthViewController.nib" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\DGTChallengeViewController.nib" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\DGTCountryTableViewController.nib" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\DGTEmailViewController.nib" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\DGTPinCodeFormViewController.nib" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\DGTUploadContactsViewController.nib" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\addressbook-find-friends.png" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\addressbook-find-friends%402x.png" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\addressbook-find-friends%403x.png" />
-    <BundleResource Include="Resources\DigitsKitResources.bundle\ar.lproj\Localizable.strings" />
-    <BundleResource Include="Resources\DigitsKitResources.bundle\bn.lproj\Localizable.strings" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\country-codes.json" />
-    <BundleResource Include="Resources\DigitsKitResources.bundle\cs.lproj\Localizable.strings" />
-    <BundleResource Include="Resources\DigitsKitResources.bundle\da.lproj\Localizable.strings" />
-    <BundleResource Include="Resources\DigitsKitResources.bundle\de.lproj\Localizable.strings" />
-    <BundleResource Include="Resources\DigitsKitResources.bundle\DGTAuthViewController.nib" />
-    <BundleResource Include="Resources\DigitsKitResources.bundle\DGTConfirmViewController.nib" />
-    <BundleResource Include="Resources\DigitsKitResources.bundle\DGTPinCodeFormViewController.nib" />
-    <BundleResource Include="Resources\DigitsKitResources.bundle\DGTUploadContactsViewController.nib" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\digits-logo-icon-mid.png" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\digits-logo-icon.png" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\digits-logo-icon%402x.png" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\digits-logo-icon%403x.png" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\digits-logo-name-mid.png" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\digits-logo-name.png" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\digits-logo-name%402x.png" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\digits-logo-name%403x.png" />
-    <BundleResource Include="Resources\DigitsKitResources.bundle\en.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\unable-phone.png" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\unable-phone%402x.png" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\unable-phone%403x.png" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\TFSScribe.momd\TFSScribe.mom" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\TFSScribe.momd\VersionInfo.plist" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\ar.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\bn.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\cs.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\da.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\de.lproj\Localizable.strings" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\en-gb.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\DigitsKitResources.bundle\en.lproj\Localizable.strings" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\es.lproj\Localizable.strings" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\fa.lproj\Localizable.strings" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\fi.lproj\Localizable.strings" />
@@ -94,28 +114,13 @@
     <BundleResource Include="Resources\DigitsKitResources.bundle\ro.lproj\Localizable.strings" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\ru.lproj\Localizable.strings" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\sv.lproj\Localizable.strings" />
-    <BundleResource Include="Resources\DigitsKitResources.bundle\TFSScribe.momd\TFSScribe.mom" />
-    <BundleResource Include="Resources\DigitsKitResources.bundle\TFSScribe.momd\VersionInfo.plist" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\th.lproj\Localizable.strings" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\tl.lproj\Localizable.strings" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\tr.lproj\Localizable.strings" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\uk.lproj\Localizable.strings" />
-    <BundleResource Include="Resources\DigitsKitResources.bundle\unable-phone.png" />
-    <BundleResource Include="Resources\DigitsKitResources.bundle\unable-phone%402x.png" />
-    <BundleResource Include="Resources\DigitsKitResources.bundle\unable-phone%403x.png" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\ur.lproj\Localizable.strings" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\vi.lproj\Localizable.strings" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\zh-Hans.lproj\Localizable.strings" />
     <BundleResource Include="Resources\DigitsKitResources.bundle\zh-Hant.lproj\Localizable.strings" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MonoTouch.Fabric.TwitterCore\MonoTouch.Fabric.TwitterCore.csproj">
-      <Project>{A6455BEE-0D57-4C78-8065-FF46B32DE7B9}</Project>
-      <Name>MonoTouch.Fabric.TwitterCore</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MonoTouch.Fabric\MonoTouch.Fabric.csproj">
-      <Project>{F2FB7104-B907-4292-8120-D821B2390A33}</Project>
-      <Name>MonoTouch.Fabric</Name>
-    </ProjectReference>
   </ItemGroup>
 </Project>

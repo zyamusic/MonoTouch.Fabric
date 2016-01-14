@@ -42,6 +42,7 @@
     <Compile Include="libTwitterCore.linkwith.cs">
       <DependentUpon>libTwitterCore.a</DependentUpon>
     </Compile>
+    <Compile Include="StructsAndEnums.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
   <ItemGroup>

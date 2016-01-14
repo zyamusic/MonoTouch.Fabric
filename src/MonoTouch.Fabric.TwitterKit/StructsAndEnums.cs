@@ -32,7 +32,7 @@ namespace MonoTouch.Fabric.TwitterKit
 		AlreadyRetweeted = 327,
 		TooManyRequests = 429
 	}
-
+	
 	[Native]
 	public enum TWTRErrorCode : long
 	{
@@ -49,7 +49,7 @@ namespace MonoTouch.Fabric.TwitterKit
 		WebViewError = 9,
 		MissingParameter = 10
 	}
-
+	
 	[Native]
 	public enum TWTRLogInErrorCode : long
 	{
@@ -57,9 +57,53 @@ namespace MonoTouch.Fabric.TwitterKit
 		Denied = 0,
 		Canceled = 1,
 		NoAccounts = 2,
-		ReverseAuthFailed = 3
+		ReverseAuthFailed = 3,
+		CannotRefreshSession = 4,
+		SessionNotFound = 5,
+		Failed = 6,
+		SystemAccountCredentialsInvalid = 7
 	}
-
+	
+	[Native]
+	public enum DGTErrorCode : long
+	{
+		UnspecifiedError = 0,
+		UserCanceledAuthentication = 1,
+		UnableToAuthenticateNumber = 2,
+		UnableToConfirmNumber = 3,
+		UnableToAuthenticatePin = 4,
+		UserCanceledFindContacts = 5,
+		UserDeniedAddressBookAccess = 6,
+		FailedToReadAddressBook = 7,
+		UnableToUploadContacts = 8,
+		UnableToDeleteContacts = 9,
+		UnableToLookupContactMatches = 10,
+		UnableToCreateEmailAddress = 11
+	}
+	
+	[Native]
+	public enum DGTAccountFields : long
+	{
+		None = 1 << 0,
+		Email = 1 << 1,
+		DefaultOptionMask = None
+	}
+	
+	[Native]
+	public enum DGTContactAccessAuthorizationStatus : long
+	{
+		Pending = 0,
+		Denied = 1,
+		Accepted = 2
+	}
+	
+	[Native]
+	public enum TWTRCardType : ulong
+	{
+		PromoImageApp,
+		Unknown
+	}
+	
 	[Native]
 	public enum TWTRTimelineType : ulong
 	{
@@ -68,21 +112,28 @@ namespace MonoTouch.Fabric.TwitterKit
 		Collection,
 		List
 	}
-
+	
 	[Native]
 	public enum TWTRComposerResult : long
 	{
 		Cancelled,
 		Done
 	}
-
+	
+	[Native]
+	public enum TWTRComposerThemeType : long
+	{
+		Light,
+		Dark
+	}
+	
 	[Native]
 	public enum TWTRTweetViewStyle : ulong
 	{
 		Regular,
 		Compact
 	}
-
+	
 	[Native]
 	public enum TWTRTweetViewTheme : ulong
 	{
